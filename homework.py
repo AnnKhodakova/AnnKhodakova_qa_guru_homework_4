@@ -43,7 +43,7 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
     l = [randint(1, 100) for i in range(10)]
-    sorted(l)
+    l = sorted(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
